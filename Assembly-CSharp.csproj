@@ -53,6 +53,7 @@
   <ItemGroup>
      <Compile Include="Assets\script\BasicControl.cs" />
      <Compile Include="Assets\script\CameraPlayerVision.cs" />
+     <Compile Include="Assets\script\NextRoom.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Program Files (x86) Extension/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
