@@ -7,21 +7,29 @@ public class NextRoom : MonoBehaviour {
 
 	public string roomname;
 
+
 	// Use this for initialization
 	void Start () {
-		
+
+
+	
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		
 
 
 	}
 
-	void OnMouseDown(){
+	void HitByRay(){
 	
-		SceneManager.LoadScene (roomname);
-		Debug.Log ("clicked"); 
+		Debug.Log ("hitto");
+		if (Input.GetMouseButtonDown (0)) {
+		
+			SceneManager.LoadScene (roomname);
+			Debug.Log ("clicked"); 
+		}
 	}
 
 
