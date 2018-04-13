@@ -54,7 +54,10 @@
      <Compile Include="Assets\script\BasicControl.cs" />
      <Compile Include="Assets\script\CameraPlayerVision.cs" />
      <Compile Include="Assets\script\CursorBehaviour.cs" />
+     <Compile Include="Assets\script\getitemtest.cs" />
+     <Compile Include="Assets\script\Inventory.cs" />
      <Compile Include="Assets\script\NextRoom.cs" />
+     <Compile Include="Assets\script\PlayerData.cs" />
      <Compile Include="Assets\script\RaycastTest.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Program Files (x86) Extension/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

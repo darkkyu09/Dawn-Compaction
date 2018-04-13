@@ -2,18 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BasicControl : MonoBehaviour {
-
+public class getitemtest : MonoBehaviour
+{
 
 	// Use this for initialization
-	void Start () {
-
-
+	void OnEnable () {
+		Inventory.inventoryScript.AddItemInv ("tenga");
 	}
 	
 	// Update is called once per frame
-	void Update ()
-	{
+	void Update () {
+
+	}
+
+
+	void OnMouseClick(){
+	
 
 
 	}
