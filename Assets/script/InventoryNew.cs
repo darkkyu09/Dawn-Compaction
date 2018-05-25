@@ -36,12 +36,8 @@ public class InventoryNew : MonoBehaviour {
 	}
 
 	public void RemoveItem(int slot){
-	
-		GameObject Data = GameObject.Find ("Database");
-		GItemList DataList = Data.GetComponent<GItemList> ();
-
 		if (SlotAmount != 0) {
-			SlotIcon [SlotAmount].sprite = null;
+			SlotIcon [SlotAmount-1].sprite = null;
 			SlotAmount--;
 		}
 

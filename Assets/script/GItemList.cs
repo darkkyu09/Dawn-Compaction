@@ -18,9 +18,6 @@ public class GItemList : MonoBehaviour {
 		ItemIcon[0] = "UI/Icon/Key_ic";
 
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+
 }

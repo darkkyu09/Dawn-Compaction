@@ -18,27 +18,20 @@ public class PlayerData : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-		if (GameObject.Find ("Player").GetComponent<BasicControl> ().InvStatusInfo == true) {
-			if (StorageAmount < 20) {
-				for (int i = 0; i < StorageAmount + 1; i++) {
 		
-			
-					Inv.GetComponent<InventoryNew> ().AddItem (i);
-				
-				}
-			}
-		}
 	}
 
 
 	public void ClearStorage(int SlotID){
-		if (GameObject.Find ("Player").GetComponent<BasicControl> ().InvStatusInfo == true) {
+
+		if (StorageAmount != 0) {
 			Inv.GetComponent<InventoryNew> ().RemoveItem (SlotID);
-		}
-		for (int z = SlotID; z < StorageAmount; z++) {
 		
-			StorageItemID [z] = StorageItemID [z + 1];
+			for (int z = SlotID; z < StorageAmount; z++) {
+		
+				StorageItemID [z] = StorageItemID [z + 1];
+			}
+			StorageAmount--;
 		}
 	}
 
@@ -48,6 +41,7 @@ public class PlayerData : MonoBehaviour {
 		if (StorageAmount < 20) {
 		
 			StorageItemID [StorageAmount] = ItemID;
+			Inv.GetComponent<InventoryNew> ().AddItem (StorageItemID[StorageAmount]);
 			StorageAmount++;
 		}
 	}

@@ -25,7 +25,7 @@ public class ItemGet : MonoBehaviour {
 		if (Input.GetMouseButtonDown (0)) {
 
 			PData.GetComponent<PlayerData> ().InsertStorage (ItemID);
-			gameObject.SetActive (false);
+			//gameObject.SetActive (false);
 		}
 	}
 }

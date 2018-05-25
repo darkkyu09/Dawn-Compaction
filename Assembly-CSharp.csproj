@@ -54,9 +54,12 @@
      <Compile Include="Assets\script\BasicControl.cs" />
      <Compile Include="Assets\script\CameraPlayerVision.cs" />
      <Compile Include="Assets\script\CursorBehaviour.cs" />
+     <Compile Include="Assets\script\CursorState.cs" />
      <Compile Include="Assets\script\GItemList.cs" />
+     <Compile Include="Assets\script\InventoryItemMenu.cs" />
      <Compile Include="Assets\script\InventoryNew.cs" />
      <Compile Include="Assets\script\ItemGet.cs" />
+     <Compile Include="Assets\script\ItemRemoveTest.cs" />
      <Compile Include="Assets\script\NextRoom.cs" />
      <Compile Include="Assets\script\PlayerData.cs" />
      <Compile Include="Assets\script\RaycastTest.cs" />
