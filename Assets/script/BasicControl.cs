@@ -17,6 +17,7 @@ public class BasicControl : MonoBehaviour {
 		Inv.SetActiveRecursively(false);
 		InvStatus = false;
 		InvStatusInfo = InvStatus;
+		Cursor.visible = false;
 
 	}
 	
@@ -28,9 +29,11 @@ public class BasicControl : MonoBehaviour {
 			if (InvStatus == false) {
 				Inv.SetActiveRecursively (true);
 				InvStatus = true;
+				Cursor.visible = true;
 			}else if (InvStatus == true) {
 				Inv.SetActiveRecursively(false);
 				InvStatus = false;
+				Cursor.visible = false;
 			}
 			InvStatusInfo = InvStatus;
 

@@ -21,8 +21,8 @@ public class RaycastTest : MonoBehaviour {
 		if(Physics.Raycast(transform.position, (forward), out hit)){
 
 			dis = hit.distance;
-			print (dis);
-			print (hit.collider.gameObject.name);
+			//print (dis);
+			//print (hit.collider.gameObject.name);
 
 
 

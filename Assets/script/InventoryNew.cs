@@ -37,7 +37,11 @@ public class InventoryNew : MonoBehaviour {
 
 	public void RemoveItem(int slot){
 		if (SlotAmount != 0) {
-			SlotIcon [SlotAmount-1].sprite = null;
+			for (int i = slot; i <= SlotAmount; i++) {
+
+				SlotIcon [i].sprite = SlotIcon [i + 1].sprite;
+			}
+			//SlotIcon [slot].sprite = null;
 			SlotAmount--;
 		}
 
